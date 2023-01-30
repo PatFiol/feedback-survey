@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <title>Feedback Survey</title>
+  <title>Customer Feedback Survey</title>
 </head>
+
 <body>
+  <h1 class="welcome">Welcome to our customer feedback survey</h1>
   <div class="panel-container" id="panel">
-    <div class="question" id="question">How do you feel about your experience?</div>
+
+    <div class="question" id="question">How do you feel about your experience?
     </div>
+
     <div class="card-container">
-      <div class="rating">
+      <div type="button" class="rating" id="very good">
         <img src="assets/emoji-love.gif" alt="very happy"> Very good
       </div>
-      <div class="rating">
+      <div type="button" class="rating" id="good">
         <img src="assets/emoji-happy.gif" alt="happy"> Good
       </div>
-      <div class="rating">
+      <div type="button" class="rating" id="bad">
         <img src="assets/emoji-unhappy.gif" alt="angry">Bad
       </div>
-      <div class="rating">
+      <div type="button" class="rating" id="very bad">
         <img src="assets/emoji-angry.gif" alt="very angry">Very bad
       </div>
-
     </div>
-    <button class="btn" id="next">Next</button>
-    <button class="btn" id="submit">Submit</button>
+
+  </div>
+
+  <button class="btn" id="submit">Submit</button>
+
+  </div>
 
 
-    <script src="script.js"></script>
-    </body>
-    </html>
+  <script src="script.js"></script>
+</body>
+
+</html>

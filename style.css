@@ -1,51 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-	--background: rgb(241, 236, 248);
-	--panel-color: rgb(102, 51, 153);
+:root {
+  --background: hsl(264, 18%, 89%);
+	--purple: hsl(270, 50%, 40%);
 	--card-color: rgba(244, 239, 251, 0.9);
 	--question-color: rgb(222, 184, 135);
 	--box-shadow: 1px 1px 6px rgba(3 3 3 / 0.8);
 }
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+  font-family: 'Roboto';
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
-	margin: 0;
   background-color: var(--background);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow: hidden;
+  width: 100vw;
+}
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--purple);
+  padding: 2rem;
 }
 
 .panel-container {
   background-color: var(--panel-color);
-  height: 60px;
-  width: 620px;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 300px;
   box-shadow: var(--box-shadow);
+  border-radius: var(--border);
+
 }
 
 .card-container {
   background-color: var(--card-color);
-  width: 620px;
-  padding: 30px;
-  box-shadow: var(--box-shadow);
-  border-radius: 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.rating {
-  width: 20%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+}
+
+.question {
+  color:var(--question-color);
+  background: var(--purple);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.rating {
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
 }
 
 img {
@@ -59,27 +80,37 @@ img:hover {
   box-shadow: var(--box-shadow);
  }
 
-.question {
-  color:var(--question-color);
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.8rem;
-}
-
 .btn {
   font-size: 1rem;
   color: var(--question-color);
-  background-color: var(--panel-color);
+  background-color: var(--purple);
   border: 0;
   border-radius: 4px;
-  padding: 10px 25px;
-  margin: 50px 0;
+  padding: .5em 1em;
+  margin-top: 2rem;
   line-height: 25px;
   text-transform: uppercase;
   cursor: pointer;
 }
 
+.btn:hover {
+  font-weight: 600;
+}
 .btn:active {
   transform: scale(0.90);
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+  .panel-container {
+    min-width: 600px;
+
+  }
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+  }
 }
