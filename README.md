@@ -7,7 +7,7 @@ Survey for customers to give their feedback in a visual and interactive way.
 
 Maybe in the future I will add more questions and functionality.
 
-
+To visit: https://patfiol.github.io/feedback-survey/
 
 
 <img width="450" alt="feedback_desktop1" src="https://user-images.githubusercontent.com/96197951/215406870-66faefce-2908-448b-bf19-eafbf904dcb2.png"> <img width="292" alt="feedback_mobile2" src="https://user-images.githubusercontent.com/96197951/215406874-24d59a54-0b73-476f-84d2-1531fe9ae392.png">
