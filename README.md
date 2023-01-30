@@ -1,13 +1,17 @@
 # Feedback Customer Survey
 
-> This project is not finished.
-Currently I am working on adding more questions and make it functional.
+Survey for customers to give their feedback in a visual and interactive way.
 
 
-It's based in a small tutorial. I want to make it bigger and actually convert it into a survey for customers to give their feedback in a more visual and interactive way.
+> This project is based in a small tutorial but I added new styling and made it responsive.
+
+Maybe in the future I will add more questions and functionality.
 
 
-![feedback-survey_1](https://user-images.githubusercontent.com/96197951/205359156-f1531ffe-eb52-407e-b86a-66a2ca86a90d.jpg)
+
+
+<img width="450" alt="feedback_desktop1" src="https://user-images.githubusercontent.com/96197951/215406870-66faefce-2908-448b-bf19-eafbf904dcb2.png"> <img width="292" alt="feedback_mobile2" src="https://user-images.githubusercontent.com/96197951/215406874-24d59a54-0b73-476f-84d2-1531fe9ae392.png">
+<img width="401" alt="feedback_submit" src="https://user-images.githubusercontent.com/96197951/215406878-d55e2bdb-fdf6-45c5-9c21-4c38cabdd00a.png">
 
 
 
