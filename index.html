@@ -5,41 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Customer Feedback Survey</title>
 </head>
 
 <body>
-  <h1 class="welcome">Welcome to our customer feedback survey</h1>
-  <div class="panel-container" id="panel">
+  <h1 class="header">Welcome to our customer feedback survey</h1>
 
-    <div class="question" id="question">How do you feel about your experience?
+    <div class="panel-container" id="panel">
+
+      <div class="question" id="question">How do you feel about your experience?
+      </div>
+
+      <div class="rating-container">
+        <div type="button" class="answer" data-answer="very_good">
+          <img src="assets/emoji-love.gif" alt="very happy emoji"> Very good
+        </div>
+        <div type="button" class="answer" data-answer="good">
+          <img src="assets/emoji-happy.gif" alt="happy emoji"> Good
+        </div>
+        <div type="button" class="answer" data-answer="bad">
+          <img src="assets/emoji-unhappy.gif" alt="angry emoji">Bad
+        </div>
+        <div type="button" class="answer" data-answer="very_bad">
+          <img src="assets/emoji-angry.gif" alt="very angry emoji">Very bad
+        </div>
+      </div>
+
     </div>
 
-    <div class="card-container">
-      <div type="button" class="rating" id="very good">
-        <img src="assets/emoji-love.gif" alt="very happy"> Very good
-      </div>
-      <div type="button" class="rating" id="good">
-        <img src="assets/emoji-happy.gif" alt="happy"> Good
-      </div>
-      <div type="button" class="rating" id="bad">
-        <img src="assets/emoji-unhappy.gif" alt="angry">Bad
-      </div>
-      <div type="button" class="rating" id="very bad">
-        <img src="assets/emoji-angry.gif" alt="very angry">Very bad
-      </div>
-    </div>
-
-  </div>
-
-  <button class="btn" id="submit">Submit</button>
-
-  </div>
-
+    <button class="submit" id="submit">Submit</button>
 
   <script src="script.js"></script>
 </body>
